@@ -81,8 +81,6 @@ Falcon works perfectly with `rails` apps.
 
 2. Run `falcon serve` to start a local development server.
 
-Alternatively run `RACK_HANDLER=falcon rails server` to start the server (at least, until [rack#181](https://github.com/rack/rack/pull/1181) is merged).
-
 #### Thread Safety
 
 With older versions of Rails, the `Rack::Lock` middleware can be inserted into your app by Rails. `Rack::Lock`will cause both poor performance and deadlocks due to the highly concurrent nature of `falcon`. Other web frameworks are generally unaffected.
